@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- /index.html -->
+
+    <form class="form" action="/submit" method="post">
+        <div class="input-wrapper">
+            <input id="nameInput" class="input" type="text" name="username" placeholder=" " data-placeholder="Your Name"
+                required>
+            <span class="placeholder">Your Name</span>
+        </div>
+        <div class="input-wrapper">
+            <input id="phoneInput" class="input" type="tel" name="number" placeholder=" "
+                data-placeholder="Phone Number" required>
+            <span class="placeholder">Phone Number</span>
+        </div>
+
+    </form>
+
+    <div class="error-message"></div>
+
+
+    <div class="wrapper">
+        <div id="final-value">
+            <p>Click On The Spin Button To Start</p>
+        </div>
+        <div class="container">
+            <canvas id="wheel"></canvas>
+            <button type="submit" id="spin-btn" onclick="saveData()">Spin</button>
+            <img id="arrow-svg" src="./media/arrow.svg" alt="spinner arrow" />
+        </div>
+    </div>
+    <div class="img-logo"><img src="media/logo.jpg" alt=""></div>
+
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
